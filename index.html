@@ -1,64 +1,150 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>xx</title>
-	<meta http-equiv="content-type" charset="utf-8" content="text/html; charset=UTF-8">
-	<link href="css/style.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/coding.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yizhou Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<h1>Key words</h1>
-<h2>please at least know what those methods for</h2>
-<br>
-<h2>feature extraction</h2>
-PCA
-<br>
-SVD
-<br>
 
-<h2>clustering</h2>
-<br>
-ISO-split
-<br>
-k mean
-<br>
-gaussian mixture, GMM
-<br>
-<h2>misc</h2>
-if want to know more
-<br>
-nearest neigbor
-<br>
-single linkage
-<br>
-ZCA,PCA whitening
-<br>
-<br>
-checkout this review, warning, very long
-<br>
-http://stat.columbia.edu/~liam/teaching/neurostat-fall13/papers/EM/Lewicki-Network-98_1.pdf
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-name">Yizhou Chen</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
 
+<header id="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Yizhou Chen</h1>
+            <p class="subtitle">PhD Student &middot; Carnegie Mellon University</p>
+            <p class="tagline">Studying how agents make decisions through inverse rational control, at the intersection of computational neuroscience and machine learning.</p>
+            <div class="hero-links">
+                <a href="https://github.com/yizhoucc" target="_blank" class="btn">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="btn btn-outline">Google Scholar</a>
+                <a href="mailto:yizhoucc@gmail.com" class="btn btn-outline">Email</a>
+            </div>
+        </div>
+        <div class="hero-photo">
+            <img src="https://avatars.githubusercontent.com/u/39005139?v=4" alt="Yizhou Chen">
+        </div>
+    </div>
+</header>
 
+<main>
 
-    <script type="text/javascript">
-		$("#code").typewriter();
-        myAudio = new Audio('typing.mp3'); 
-        if (typeof myAudio.loop == 'boolean')
-            {
-            myAudio.loop = true;
-            }
-        else
-            {
-                myAudio.addEventListener('ended', function() {
-                this.currentTime = 0;
-                this.play();
-            }, false);
-            }
-        myAudio.play();
-	</script>
+<section id="about">
+    <h2>About</h2>
+    <div class="about-content">
+        <p>
+            I am a PhD student in the <a href="https://xaqlab.com" target="_blank">Pitkow Lab</a> at
+            <strong>Carnegie Mellon University</strong>, working with
+            <a href="https://xaqlab.com" target="_blank">Xaq Pitkow</a>.
+            My research focuses on <strong>inverse rational control (IRC)</strong> &mdash;
+            understanding the objectives and decision-making processes of agents by observing their behavior.
+        </p>
+        <p>
+            I am broadly interested in how computational models can explain neural and behavioral data,
+            bridging the gap between machine learning theory and neuroscience experiments.
+            My work combines techniques from reinforcement learning, Bayesian inference, and causal reasoning.
+        </p>
+    </div>
+</section>
 
-    <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<section id="research">
+    <h2>Research</h2>
+    <div class="research-grid">
+        <div class="research-card">
+            <h3>Inverse Rational Control</h3>
+            <p>Recovering reward functions and internal models from observed behavior using the IRC framework, to infer the computational processes underlying neural activity and decision-making.</p>
+        </div>
+        <div class="research-card">
+            <h3>Active Learning</h3>
+            <p>Designing experiments that efficiently reveal an agent's internal model by adaptively selecting stimuli and task conditions.</p>
+        </div>
+        <div class="research-card">
+            <h3>Computational Neuroscience</h3>
+            <p>Analyzing neural data with modern statistical and machine learning tools to uncover principles of neural computation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="project-list">
+        <a href="https://github.com/yizhoucc/IRC" target="_blank" class="project-card">
+            <div class="project-header">
+                <h3>Inverse Rational Control</h3>
+                <span class="project-arrow">&rarr;</span>
+            </div>
+            <p>A framework for inferring internal models and reward functions from observed behavior in decision-making tasks.</p>
+            <div class="project-tags">
+                <span>Reinforcement Learning</span>
+                <span>Neuroscience</span>
+            </div>
+        </a>
+        <a href="https://github.com/yizhoucc/IRCneural" target="_blank" class="project-card">
+            <div class="project-header">
+                <h3>IRC for Neural Analysis</h3>
+                <span class="project-arrow">&rarr;</span>
+            </div>
+            <p>Extending inverse rational control to analyze neural recordings and link computational models to brain activity.</p>
+            <div class="project-tags">
+                <span>Neural Data</span>
+                <span>Python</span>
+            </div>
+        </a>
+        <a href="https://github.com/yizhoucc/active_learning_irl" target="_blank" class="project-card">
+            <div class="project-header">
+                <h3>Active Learning for IRL</h3>
+                <span class="project-arrow">&rarr;</span>
+            </div>
+            <p>Adaptive experiment design using active learning to efficiently recover agent models through controlled stimuli.</p>
+            <div class="project-tags">
+                <span>Active Learning</span>
+                <span>Experiment Design</span>
+            </div>
+        </a>
+        <a href="https://github.com/yizhoucc/firefly_plots" target="_blank" class="project-card">
+            <div class="project-header">
+                <h3>Firefly Task Analysis</h3>
+                <span class="project-arrow">&rarr;</span>
+            </div>
+            <p>Visualization and analysis tools for the firefly behavioral experiment, studying sensorimotor decision-making.</p>
+            <div class="project-tags">
+                <span>Visualization</span>
+                <span>Behavior</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <p class="contact-text">
+        I'm always happy to discuss research ideas and potential collaborations.
+    </p>
+    <div class="contact-links">
+        <a href="mailto:yizhoucc@gmail.com">yizhoucc@gmail.com</a>
+        <a href="https://github.com/yizhoucc" target="_blank">github.com/yizhoucc</a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Yizhou Chen</p>
+</footer>
+
 </body>
 </html>
